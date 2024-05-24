@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-24T17:15:55.626074" rpa="false" schemaversion="5">
+<suite id="s1" name="Test contact" source="C:\ros\DemoWebShop\PilotProject__DemoWebShop_Team4\TestCase\Test_contact.robot">
+<test id="s1-t1" name="Click the facebook link" line="10">
+<kw name="open the browser" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:15:55.926725" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-24T17:15:55.926725" elapsed="2.781718"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:15:58.708703" level="INFO">Opening url 'https://demowebshop.tricentis.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-24T17:15:58.708703" elapsed="5.109708"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-24T17:16:03.818411" elapsed="0.049114"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-24T17:16:03.867525" elapsed="0.008999"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:15:55.926725" elapsed="7.949799"/>
+</kw>
+<kw name="click for the facebook" owner="ContactResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:03.876524" level="INFO">Clicking link 'xpath=//a[text()='Facebook']'.</msg>
+<arg>${facebook}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:03.876524" elapsed="0.175133"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:03.876524" elapsed="0.175133"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:04.051657" elapsed="0.021558"/>
+</kw>
+<kw name="close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-24T17:16:04.073215" elapsed="2.297735"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:04.073215" elapsed="2.297735"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:15:55.926725" elapsed="10.444225"/>
+</test>
+<test id="s1-t2" name="Click the twitter link" line="14">
+<kw name="open the browser" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:06.373326" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-24T17:16:06.373326" elapsed="1.841319"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:08.214645" level="INFO">Opening url 'https://demowebshop.tricentis.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-24T17:16:08.214645" elapsed="4.747184"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-24T17:16:12.961829" elapsed="0.041178"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-24T17:16:13.003007" elapsed="0.008002"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:06.373326" elapsed="6.637683"/>
+</kw>
+<kw name="click for the twitter" owner="ContactResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:13.011009" level="INFO">Clicking link 'xpath=//a[text()='Twitter']'.</msg>
+<arg>${twitter}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:13.011009" elapsed="0.139811"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:13.011009" elapsed="0.139811"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:13.155109" elapsed="0.018197"/>
+</kw>
+<kw name="close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-24T17:16:13.173306" elapsed="2.173020"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:13.173306" elapsed="2.173020"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:06.373326" elapsed="8.973000"/>
+</test>
+<test id="s1-t3" name="Click the Rss link" line="18">
+<kw name="open the browser" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:15.350041" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-24T17:16:15.350041" elapsed="1.757633"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:17.112893" level="INFO">Opening url 'https://demowebshop.tricentis.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-24T17:16:17.107674" elapsed="2.081468"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-24T17:16:19.189142" elapsed="2.105393"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-24T17:16:21.294535" elapsed="0.002861"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:15.350041" elapsed="5.948082"/>
+</kw>
+<kw name="click for the rss" owner="ContactResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:21.299957" level="INFO">Clicking link 'xpath=//a[text()='RSS']'.</msg>
+<arg>${rss}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:21.299957" elapsed="0.373211"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:21.298953" elapsed="0.374215"/>
+</kw>
+<kw name="close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-24T17:16:21.677824" elapsed="2.185270"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:21.676628" elapsed="2.186466"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:15.349412" elapsed="8.513682"/>
+</test>
+<test id="s1-t4" name="Click the youtube link" line="22">
+<kw name="open the browser" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:23.863094" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-24T17:16:23.863094" elapsed="1.752905"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:25.616999" level="INFO">Opening url 'https://demowebshop.tricentis.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-24T17:16:25.615999" elapsed="5.157659"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-24T17:16:30.773658" elapsed="0.086994"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-24T17:16:30.860652" elapsed="0.005006"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:23.863094" elapsed="7.002564"/>
+</kw>
+<kw name="click for the youtube" owner="ContactResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:30.875869" level="INFO">Clicking link 'xpath=//a[text()='YouTube']'.</msg>
+<arg>${youtube}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:30.875869" elapsed="0.126628"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:30.873903" elapsed="0.129439"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:31.004543" elapsed="0.013731"/>
+</kw>
+<kw name="close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-24T17:16:31.018274" elapsed="2.205863"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:31.018274" elapsed="2.205863"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:23.863094" elapsed="9.361043"/>
+</test>
+<test id="s1-t5" name="Click the google link" line="26">
+<kw name="open the browser" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:33.227550" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-24T17:16:33.227550" elapsed="1.828019"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:35.055569" level="INFO">Opening url 'https://demowebshop.tricentis.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-24T17:16:35.055569" elapsed="3.732796"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-24T17:16:38.788365" elapsed="0.049187"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-24T17:16:38.837552" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:33.227550" elapsed="5.610002"/>
+</kw>
+<kw name="click for the google" owner="ContactResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:16:38.845059" level="INFO">Clicking link 'xpath=//a[text()='Google+']'.</msg>
+<arg>${google}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:38.845059" elapsed="0.129429"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:38.837552" elapsed="0.140719"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:16:38.978271" elapsed="0.023465"/>
+</kw>
+<kw name="close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-24T17:16:39.010483" elapsed="2.173040"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:39.001736" elapsed="2.181787"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:16:33.227550" elapsed="7.955973"/>
+</test>
+<doc>Test the link available in the page</doc>
+<status status="PASS" start="2024-05-24T17:15:55.626074" elapsed="45.560282"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Test contact">Test contact</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
