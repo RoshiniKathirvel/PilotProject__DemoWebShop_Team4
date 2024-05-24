@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-24T22:40:40.293421" rpa="false" schemaversion="5">
+<suite id="s1" name="TestBookmoduleclickproduct" source="E:\EXPLEO\Automation Project\PilotProject__DemoWebShop_Team4\TestCase\TestBookmodule\TestBookmoduleclickproduct.robot">
+<test id="s1-t1" name="To verify product page" line="15">
+<kw name="Open a browser with url" owner="Genericresource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-24T22:40:40.666736" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-24T22:40:40.666736" elapsed="7.273364"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-24T22:40:47.940100" level="INFO">Opening url 'https://demowebshop.tricentis.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-24T22:40:47.940100" elapsed="5.186385"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-24T22:40:53.126485" elapsed="0.012590"/>
+</kw>
+<status status="PASS" start="2024-05-24T22:40:40.666736" elapsed="12.472339"/>
+</kw>
+<kw name="To click on product and verify it shows product details">
+<kw name="To click book option" owner="bookmoduleresource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-24T22:40:53.143076" level="INFO">Clicking link 'xpath:(//li/a)[5]'.</msg>
+<arg>${book_l}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T22:40:53.142076" elapsed="1.044976"/>
+</kw>
+<status status="PASS" start="2024-05-24T22:40:53.141076" elapsed="1.047330"/>
+</kw>
+<kw name="click on product" owner="bookmoduleresource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-24T22:40:54.189421" level="INFO">Clicking link 'xpath:(//h2/a)[1]'.</msg>
+<arg>${product_l}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T22:40:54.188914" elapsed="2.412944"/>
+</kw>
+<status status="PASS" start="2024-05-24T22:40:54.188406" elapsed="2.413452"/>
+</kw>
+<status status="PASS" start="2024-05-24T22:40:53.141076" elapsed="3.460782"/>
+</kw>
+<kw name="Close the browser" owner="Genericresource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-24T22:40:56.604881" elapsed="3.036755"/>
+</kw>
+<status status="PASS" start="2024-05-24T22:40:56.601858" elapsed="3.039778"/>
+</kw>
+<status status="PASS" start="2024-05-24T22:40:40.666736" elapsed="18.974900"/>
+</test>
+<doc>Test case for Bookmodule</doc>
+<status status="PASS" start="2024-05-24T22:40:40.297445" elapsed="19.344191"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestBookmoduleclickproduct">TestBookmoduleclickproduct</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
