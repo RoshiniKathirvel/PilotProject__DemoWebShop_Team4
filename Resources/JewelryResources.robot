@@ -31,7 +31,7 @@ ${click_add_to_cart}    xpath://input[@id='add-to-cart-button-14']
 ${click_shopping_cart}    xpath://span[text()='Shopping cart']
 ${add_to_cart_notifi}    xpath://p[@class='content']
 
-${click_first_range_price}    xpath:(//span[text()='500.00'])[1]
+${click_first_range_price}    xpath://a[contains(@href, 'price=0-500')]
 
 *** Keywords ***
 
