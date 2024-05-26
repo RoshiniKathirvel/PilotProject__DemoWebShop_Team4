@@ -15,7 +15,7 @@ ${position_l}    id:products-orderby
 ${product_l}    xpath:(//h2/a)[1]
 ${view_l}    id:products-viewmode
 ${addtocard_l}    xpath:(//input[@class="button-2 product-box-add-to-cart-button"])[1]
-${shopping_cardbutton_l}    xpath://span[text()="Shopping cart"]
+${shopping_cardbutton_l}    xpath:(//a[@class="ico-cart"]/span)[1]
 ${display_l}    id:products-pagesize
 ${pricefilter_l}    (//span[text()="50.00"])[2]
 ${actualprice_l}    xpath://span[@class="price actual-price"]
@@ -26,6 +26,7 @@ ${verifyalert_l}    xpath://p[@class="content"]
 ${productitle_l}    xpath://h2[@class="product-title"]/a
 ${verify_shopping}    xpath://div[@class="page-title"]/h1
 ${asserting_product}    xpath://div/h1
+${recentlyviewproduct}  xpath:(//a[text()="Computing and Internet"])[2]
 
 
 *** Keywords ***
@@ -43,8 +44,7 @@ click on product
 
 #click on shopping cart button
 click on shopping cart button
-    Scroll Element Into View    ${shopping_cardbutton_l}
-    Click Element    ${shopping_cardbutton_l}
+    Click Element   ${shopping_cardbutton_l}
 
 #click on display option 
 click on display
@@ -57,6 +57,9 @@ click on view option
 #click on sortby option
 click on sortbyoption
     Select From List By Index    ${position_l}    1
+
+click on sortbypricelowtohighoption
+    Select From List By Index    ${position_l}    3
 
 #click on add to card button
 click on add to card button
@@ -115,5 +118,11 @@ Asserting remove filter option
 Asserting shopping cart page
     Element Text Should Be    ${verify_shopping}   Shopping cart  
 
+#Asserting product page
 Asserting product page
-    Element Text Should Be    ${addtocard_l}     Computing and Internet 
+    Element Text Should Be    ${asserting_product}     Computing and Internet 
+
+#Asserting recently view page
+Asserting recently view page
+    Click Link    ${recentlyviewproduct}
+
