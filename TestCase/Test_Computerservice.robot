@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Tests to validate Computer service
 Library     SeleniumLibrary
-Test Setup      Open the Browser
+Test Setup      Open the Browser with url
 Test Teardown   Close Browser Session
 Resource       ../Resources/GenericResources.robot
 Resource       ../Resources/computer.robot
