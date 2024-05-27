@@ -8,8 +8,9 @@ Test Teardown    close browser session
 
 *** Test Cases ***
 Click the facebook link
+    [Tags]    smoke
     ContactResources.click for the facebook
-    Switch Window     new
+    Switch Window     new    
     ContactResources.verify the facebook page is open
 
 Click the twitter link
