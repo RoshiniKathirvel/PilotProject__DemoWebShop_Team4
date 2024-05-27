@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${url}    https://demowebshop.tricentis.com/
-${browser}    Firefox  
+${browser}    Chrome  
 *** Keywords ***
 Open a browser with url
     Create Webdriver    ${browser}
