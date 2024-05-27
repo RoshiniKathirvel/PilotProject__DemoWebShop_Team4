@@ -29,7 +29,8 @@ click for the google
     Click Link    ${google}
 
 verify the facebook page is open
-    ${store}    Get Title     
+    ${store}    Get Title  
+    sleep     5s
     Should Be Equal As Strings       ${store}    NopCommerce 
 
 verify the twitter page is open
