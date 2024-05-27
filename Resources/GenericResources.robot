@@ -3,11 +3,10 @@ Documentation        A resource file with reusable variables and keywords
 Library        SeleniumLibrary
 
 *** Variables ***
-${url}    https://demowebshop.tricentis.com/
-${browser_name}    Chrome
 
+${URL}    https://demowebshop.tricentis.com
+${browser}    Chrome 
 *** Keywords ***
-
 open the browser
       Create Webdriver        ${browser_name}
       Go To     ${url}
@@ -36,3 +35,6 @@ Open the Browser with url
 Close Browser session
     Close Browser
 
+
+Close Browser session
+    Close Browser
