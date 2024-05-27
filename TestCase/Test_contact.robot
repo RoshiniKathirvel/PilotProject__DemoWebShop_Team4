@@ -10,10 +10,12 @@ Test Teardown    close browser session
 Click the facebook link
     ContactResources.click for the facebook
     Switch Window     new
+    ContactResources.verify the facebook page is open
 
 Click the twitter link
     ContactResources.click for the twitter
     Switch Window    new
+    ContactResources.verify the twitter page is open
 
 Click the Rss link
     ContactResources.click for the rss
@@ -21,6 +23,7 @@ Click the Rss link
 Click the youtube link
     ContactResources.click for the youtube
     Switch Window    new
+    ContactResources.verify the youtube page is open
 
 Click the google link
     ContactResources.click for the google
