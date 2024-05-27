@@ -27,6 +27,7 @@ To click on shipping option
 To click on privacy option
     Click Link    ${privacy_l}
 
+#To click on condition option
 To click on condition option
     Click Link    ${condition_l}
 
