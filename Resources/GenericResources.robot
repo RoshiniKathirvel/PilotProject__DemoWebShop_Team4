@@ -1,17 +1,17 @@
 *** Settings ***
-Documentation    A resource file with reusable Keywords and variables
-Library    SeleniumLibrary
+Documentation        A resource file with reusable variables and keywords
+Library        SeleniumLibrary
 
 *** Variables ***
-${URL}    https://demowebshop.tricentis.com/customer/info
-${browser}    Chrome 
+${url}    https://demowebshop.tricentis.com/
+${browser_name}    Chrome
 
 *** Keywords ***
-Open the Browser with url
-    Create Webdriver    Chrome
-    Go To     ${URL}    
+Open the Browser
+    [Arguments]    ${url}=${url}    ${browser_name}=${browser_name}
+    Open Browser    ${url}    ${browser_name}
     Maximize Browser Window
-    Set Selenium Implicit Wait    5
+    Set Selenium Implicit Wait    10 seconds
 
-Close Browser session
+Close Browser Session
     Close Browser
