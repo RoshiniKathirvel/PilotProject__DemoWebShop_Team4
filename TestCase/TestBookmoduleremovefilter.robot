@@ -13,6 +13,7 @@ Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
 To verify for removing filter price option 
+    [Tags]    Regressiontest
     To verify remove filter option
 
 *** Keywords ***

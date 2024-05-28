@@ -1,3 +1,4 @@
+
 '''
 Test case for Book Module
 @author: Jayasuriya P J(Expleo)
@@ -13,6 +14,7 @@ Test Teardown    Genericresource.Close the browser
 *** Test Cases ***
 # Test case for clicking product
 To verify product page
+    [Tags]    smoketest
     To click on product and verify it shows product details
 
 *** Keywords ***

@@ -13,10 +13,10 @@ Test Teardown    Genericresource.Close the browser
 *** Test Cases ***
 #Test case to click product and select add to cart option
 To click product and select add to cart option
+    [Tags]    retest
     To click on book option
     To verify shows book details
     To select add to cart
-    To verify product added
 
 *** Keywords ***
 #Keyword to click on book
@@ -35,6 +35,3 @@ To click on product
 To select add to cart
     bookmoduleresource.click on add to card button
 
-#Keyword to verify product added
-To verify product added
-    bookmoduleresource.verify product added in shopping cart

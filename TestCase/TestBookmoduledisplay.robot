@@ -12,6 +12,7 @@ Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
 To verify display option
+    [Tags]    smoketest
     To verify 4 books display by selecting 4 option in the field
 
 *** Keywords ***
