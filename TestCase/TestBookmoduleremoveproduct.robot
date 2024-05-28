@@ -12,6 +12,7 @@ Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
 To remove the product from shopping cart
+    [Tags]    Regressiontest
     To remove the product from the shopping cart
 
 *** Keywords ***

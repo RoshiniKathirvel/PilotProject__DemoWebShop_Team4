@@ -13,6 +13,7 @@ Test Teardown    Genericresource.Close the browser
 *** Test Cases ***
 To verify sorting functionality 
 #Test cases for  Bookmodule
+    [Tags]    Regressiontest
     To verify sorting by selecting "A-Z" option
     
 *** Keywords ***

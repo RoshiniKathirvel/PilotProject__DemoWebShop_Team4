@@ -12,6 +12,7 @@ Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
 To verify view mode of product
+    [Tags]    smoketest
     To verify view mode of product in list format
 
 *** Keywords ***

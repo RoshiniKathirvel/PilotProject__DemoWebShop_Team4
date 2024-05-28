@@ -12,6 +12,7 @@ Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
 To verify for selecting price filter "over 50.00" option
+    [Tags]    Regression test
     To verify for select price filter "over 50.00" option
 
 *** Keywords ***    

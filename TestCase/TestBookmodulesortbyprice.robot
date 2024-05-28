@@ -12,6 +12,7 @@ Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
 To verify sort the product by price
+    [Tags]    Regressiontest
     To sort the product by low to high price option
 
 *** Keywords ***

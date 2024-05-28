@@ -12,6 +12,7 @@ Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
 To verify shopping cart option
+    [Tags]    Regressiontest
     To click and validate shopping cart option
 
 *** Keywords ***
