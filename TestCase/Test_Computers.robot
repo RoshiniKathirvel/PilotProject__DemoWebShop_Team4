@@ -4,6 +4,10 @@ Library    SeleniumLibrary
 Resource    ../Resources/GenericResources.robot
 Test Setup       open the browser
 Test Teardown    close browser session
+Library     SeleniumLibrary
+Test Setup      Open the Browser 
+Test Teardown   Close Browser Session
+Resource       ../Resources/GenericResources.robot
 Resource       ../Resources/computer.robot
 
 
