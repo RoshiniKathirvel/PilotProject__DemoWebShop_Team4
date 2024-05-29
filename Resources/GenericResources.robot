@@ -7,12 +7,12 @@ Library        SeleniumLibrary
 ${URL}    https://demowebshop.tricentis.com
 ${browser}    Chrome 
 *** Keywords ***
+open the browser
+      Create Webdriver        ${browser}
+      Go To     ${url}
+      Maximize Browser Window
+      Set Selenium Implicit Wait     5
 
-Open the Browser with url
-    Create Webdriver    Chrome
-    Go To     ${URL}    
-    Maximize Browser Window
-    Set Selenium Implicit Wait    5
+close browser session
+        Close Browser
 
-Close Browser session
-    Close Browser
