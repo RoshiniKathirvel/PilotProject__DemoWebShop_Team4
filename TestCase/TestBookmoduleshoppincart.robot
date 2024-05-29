@@ -4,18 +4,18 @@ Test case for Book Module
 @date:24/05/2024
 '''
 *** Settings ***
-Documentation    Test case for Bookmodule
-Resource    E:\\EXPLEO\\Automation Project\\PilotProject__DemoWebShop_Team4\\Resources\\Genericresource.robot    
-Resource    E:\\EXPLEO\\Automation Project\\PilotProject__DemoWebShop_Team4\\Resources\\bookmoduleresource.robot
+Documentation    Test case for Bookmodule to verify add to cart button by login
+Resource    ../Resources/Genericresource.robot
+Resource   ../Resources/bookmoduleresource.robot
 Test Setup    Genericresource.Open a browser with url
 Test Teardown    Genericresource.Close the browser
 
 *** Test Cases ***
-To verify shopping cart option
+To verify add to cart button by login
     [Tags]    Regressiontest
-    To click and validate shopping cart option
+   To click login and add to card
 
 *** Keywords ***
-To click and validate shopping cart option
-    bookmoduleresource.click on shopping cart button
-    bookmoduleresource.Asserting shopping cart page
+To click login and add to card
+    bookmoduleresource.To click book option
+    bookmoduleresource.click on add to card button
