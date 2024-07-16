@@ -5,11 +5,11 @@ Test case for Information Module
 '''
 *** Settings ***
 Documentation    Test case for sitemap page
-Resource    ../Resources/Genericresource.robot
 Resource   ../Resources/Informationmoduleresource.robot
 Resource    ../Resources/bookmoduleresource.robot
-Test Setup    Genericresource.Open a browser with url
-Test Teardown    Genericresource.Close the browser
+Resource    ../Resources/GenericResources.robot
+Test Setup    GenericResources.Open the Browser
+Test Teardown    GenericResources.Close Browser Session
 
 *** Test Cases ***
 Verifying for site map page

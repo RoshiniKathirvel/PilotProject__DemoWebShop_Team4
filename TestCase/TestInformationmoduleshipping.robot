@@ -5,10 +5,11 @@ Test case for Information Module
 '''
 *** Settings ***
 Documentation    Test case to click shipping and return page
-Resource    ../Resources/Genericresource.robot
 Resource   ../Resources/Informationmoduleresource.robot
-Test Setup    Genericresource.Open a browser with url
-Test Teardown    Genericresource.Close the browser
+Resource    ../Resources/GenericResources.robot
+Test Setup    GenericResources.Open the Browser
+Test Teardown    GenericResources.Close Browser Session
+
 
 *** Test Cases ***
 Verifying for shipping and return page

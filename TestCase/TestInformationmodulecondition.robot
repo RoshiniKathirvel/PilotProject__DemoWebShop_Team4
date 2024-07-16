@@ -6,10 +6,12 @@ Test case for Information Module
 *** Settings ***
 Documentation    Test case for sitemap page  to Verifying for Privacy Condition page
 Library    SeleniumLibrary
-Resource    ../Resources/Genericresource.robot
+
 Resource   ../Resources/Informationmoduleresource.robot
-Test Setup    Genericresource.Open a browser with url
-Test Teardown    Genericresource.Close the browser
+Resource    ../Resources/GenericResources.robot
+Test Setup    GenericResources.Open the Browser
+Test Teardown    GenericResources.Close Browser Session
+
 
 *** Test Cases ***
 #Test case for privacy condition page
