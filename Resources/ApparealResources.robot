@@ -51,7 +51,7 @@ click the appereal high to low
 
 click the appereal created on
      Click Link    ${appereal}
-    Select From List By Label      id:products-orderby    Name: A to Z
+    Select From List By Label      id:products-orderby     Created on
     Select From List By Label     id:products-pagesize   4
     Select From List By Label      id:products-viewmode   Grid
     Click Element    ${create}

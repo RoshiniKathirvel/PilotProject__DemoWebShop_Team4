@@ -1,12 +1,11 @@
 *** Settings ***
 Documentation       Tests to validate Computer service
-Library     SeleniumLibrary
-Test Setup      Open the Browser
-Test Teardown   Close Browser Session
-Resource       ../Resources/GenericResources.robot
+Library    SeleniumLibrary
+Resource    ../Resources/GenericResources.robot
+Test Setup       open the browser
+Test Teardown    close browser session
 Resource       ../Resources/computer.robot
 Resource       ../Resources/ComputerService.robot
-
 
 *** Test Cases ***
 Validate Search Field
@@ -18,14 +17,6 @@ Validate Search Field
     ComputerService.Fill the details of Advance Search
     ComputerService.Click search 
     ComputerService.List the Computers
-
-#Validate for empty search
- #   ComputerService.Click the Search field
- #   ComputerService.Enter the product 
- #   ComputerService.Click Search Button   
- #   ComputerService.Clear text for search
- #   ComputerService.Click search
-  #  ComputerService.Error for empty search
 Validate for news field
     ComputerService.click the news field
     ComputerService.click details in news
@@ -34,5 +25,24 @@ Validate for news field
     ComputerService.Click new comment
 Validate the blog field
     ComputerService.Click the blog field
-
-
+    ComputerService.Blog Title
+    ComputerService.Blog Links
+Validate recently viewed products
+    ComputerService.Validate Recently viewed products
+Validate for compare product list
+    ComputerService.Validate for comparing product
+Validate for new product list
+    ComputerService.Validate for new products
+Validate for empty search
+    ComputerService.Validate for empty search product
+Validate for minimum search
+    ComputerService.Click the Search field
+    ComputerService.Enter the product for minimum 
+    ComputerService.Click Search Button
+    ComputerService.Assert for minimum search
+Validate for the invalid search
+    [Tags]    smoke
+    ComputerService.Click the Search field
+    ComputerService.Enter the product for invalid 
+    ComputerService.Click Search Button
+    ComputerService.Assert for invalid search
