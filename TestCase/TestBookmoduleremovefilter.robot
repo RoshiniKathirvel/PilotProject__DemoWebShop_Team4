@@ -4,11 +4,10 @@ Test case for Book Module
 @date:24/05/2024
 '''
 *** Settings ***
-Documentation    Test case for Bookmodule for removing filter price option
-Resource    ../Resources/Genericresource.robot
+Resource    ../Resources/GenericResources.robot
 Resource   ../Resources/bookmoduleresource.robot
-Test Setup    Genericresource.Open a browser with url
-Test Teardown    Genericresource.Close the browser
+Test Setup    GenericResources.Open the Browser
+Test Teardown    GenericResources.Close Browser Session
 
 
 *** Test Cases ***
