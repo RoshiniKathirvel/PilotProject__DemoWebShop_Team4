@@ -4,10 +4,10 @@ Test case for Information Module
 @date:23/05/2024
 '''
 *** Settings ***
-Documentation    Test case for sitemap page
-Library    SeleniumLibrary   
-Resource    E:\\EXPLEO\\Automation Project\\PilotProject__DemoWebShop_Team4\\Resources\\Genericresource.robot    
-Resource    E:\\EXPLEO\\Automation Project\\PilotProject__DemoWebShop_Team4\\Resources\\Informationmoduleresource.robot
+Documentation    Test case for sitemap page  to Verifying for Privacy Condition page
+Library    SeleniumLibrary
+Resource    ../Resources/Genericresource.robot
+Resource   ../Resources/Informationmoduleresource.robot
 Test Setup    Genericresource.Open a browser with url
 Test Teardown    Genericresource.Close the browser
 
