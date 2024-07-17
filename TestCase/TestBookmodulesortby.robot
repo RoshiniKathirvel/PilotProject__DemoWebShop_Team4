@@ -5,11 +5,10 @@ Test case for Book Module
 '''
 *** Settings ***
 Documentation    Test case for Bookmodule to sortby 
-Resource    ../Resources/Genericresource.robot
+Resource    ../Resources/GenericResources.robot
 Resource   ../Resources/bookmoduleresource.robot
-Test Setup    Genericresource.Open a browser with url
-Test Teardown    Genericresource.Close the browser
-
+Test Setup    GenericResources.Open the Browser
+Test Teardown    GenericResources.Close Browser Session
 *** Test Cases ***
 To verify sorting functionality 
 #Test cases for  Bookmodule

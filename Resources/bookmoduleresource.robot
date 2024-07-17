@@ -17,17 +17,16 @@ ${view_l}    id:products-viewmode
 ${addtocard_l}    xpath:(//input[@class="button-2 product-box-add-to-cart-button"])[1]
 ${display_l}    id:products-pagesize
 ${pricefilter_l}    (//span[text()="50.00"])[2]
-${actualprice_l}    xpath://span[@class="price actual-price"]
+${actualprice_l}    Set Variable    div.add-info > div > span.price.actual-price
 ${removefilter_l}    xpath://a[text()="Remove Filter"]
 ${assertremove_l}    xpath:(//div/strong)[4]
 ${continueshoppint_l}    xpath://input[@class="button-2 continue-shopping-button"]
 ${verifyalert_l}    xpath://p[@class="content"]
 ${productitle_l}    xpath://h2[@class="product-title"]/a
-${verify_shopping}    xpath://div[@class="page-title"]/h1
+${verify_shopping}    xpath://div/h1
 ${asserting_product}    xpath://div/h1
 ${recentlyviewproduct}  xpath:(//a[text()="Computing and Internet"])[2]
-${click_shoppingcart}    xpath://p/a
-
+${click_shoppingcart}    xpath:(//a[@class="ico-cart"])[1]
 *** Keywords ***
 #Keyword to click book option
 To click book option
@@ -175,7 +174,10 @@ Asserting product page
 Asserting recently view page
     Click Link    ${recentlyviewproduct}
 
-Click shoppincart
-    Scroll Element Into View    ${click_shoppingcart}
-    Click Element    ${click_shoppingcart}
+#click on shoppingcartbutton
+click on shopping cart button
+    Wait Until Element Is Visible    ${click_shoppingcart}    timeout=20
+    Click Link    ${click_shoppingcart}
+    Wait Until Element Contains    ${verify_shopping}    Shopping cart 
+     
 
